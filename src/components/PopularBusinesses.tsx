@@ -209,7 +209,7 @@ const PopularBusinesses = () => {
         
         <div className="flex flex-wrap justify-center">
           {businesses.map((business) => (
-            <Card key={business.id} className="w-[165px] h-[455px] flex flex-col shadow-lg hover:shadow-xl transition-shadow duration-300 mx-[2px] md:mx-[10px] mb-4">
+            <Card key={business.id} className="w-[165px] h-[455px] flex flex-col shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 mx-[2px] md:mx-[10px] mb-4">
               <div className="relative">
                 <img
                   src={business.image}
