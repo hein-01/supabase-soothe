@@ -209,7 +209,7 @@ const PopularBusinesses = () => {
         
         <div className="flex flex-wrap justify-center">
           {businesses.map((business) => (
-            <Card key={business.id} className="w-[165px] h-[455px] flex flex-col shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.01] mx-[2px] md:mx-[10px] mb-4 will-change-transform backface-visibility-hidden">
+            <Card key={business.id} className="w-[165px] h-[455px] flex flex-col shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.01] mx-[2px] md:mx-[10px] mb-4 transform-gpu will-change-transform" style={{ WebkitFontSmoothing: 'antialiased', MozOsxFontSmoothing: 'grayscale' }}>
               <div className="relative">
                 <img
                   src={business.image}
