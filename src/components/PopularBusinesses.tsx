@@ -204,17 +204,17 @@ const PopularBusinesses = () => {
 
   return (
     <section className="py-12 bg-background">
-      <div className="container mx-auto px-2 md:px-4">
+      <div className="container mx-auto px-1 md:px-4">
         <h2 className="text-3xl font-bold text-center mb-8 text-foreground">Popular Businesses</h2>
         
         <div className="flex flex-wrap justify-center">
           {businesses.map((business) => (
-            <Card key={business.id} className="w-[150px] md:w-[165px] h-[455px] flex flex-col shadow-lg hover:shadow-xl transition-shadow duration-300 mx-[3px] md:mx-[10px] mb-4">
+            <Card key={business.id} className="w-[165px] h-[455px] flex flex-col shadow-lg hover:shadow-xl transition-shadow duration-300 mx-[2px] md:mx-[10px] mb-4">
               <div className="relative">
                 <img
                   src={business.image}
                   alt={business.name}
-                  className="w-[150px] md:w-[165px] h-[150px] md:h-[165px] object-cover rounded-t-lg"
+                  className="w-[165px] h-[165px] object-cover rounded-t-lg"
                 />
                 <Button
                   variant="ghost"
